@@ -1,5 +1,8 @@
 package br.com.model;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Usuario extends Pessoa{
 	private String login;
 	private String senha;

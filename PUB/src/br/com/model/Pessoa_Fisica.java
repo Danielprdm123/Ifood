@@ -1,5 +1,8 @@
 package br.com.model;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Pessoa_Fisica extends Cliente{
 	private int cpf;
 	private int rg;

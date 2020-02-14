@@ -1,5 +1,8 @@
 package br.com.model;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Pessoa_Juridica extends Cliente{
 	private int cnpj;
 	private String ie;
