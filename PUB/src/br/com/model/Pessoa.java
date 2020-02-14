@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-public class Pessoa {
+public abstract class Pessoa {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private long id;
