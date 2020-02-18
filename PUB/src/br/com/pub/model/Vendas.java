@@ -4,12 +4,14 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 
+import javax.jws.Oneway;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
-// venda e cliente -> onetwone 1-1
+// venda e cliente -> onetomany 1-1
 // venda e mesa -> maintwoone n-1
 
 @Entity
@@ -20,7 +22,10 @@ public class Vendas {
   private LocalDate data;
   private double totalVenda;
   private Mesa mesa;
+  
+  @OneToMany
   private Cliente cliente;
+  
   private  LocalTime hora;
   private List<ItemVenda>itemvenda;
   
