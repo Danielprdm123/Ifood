@@ -1,4 +1,4 @@
-package br.com.model;
+package br.com.pub.model;
 
 import java.time.LocalDate;
 

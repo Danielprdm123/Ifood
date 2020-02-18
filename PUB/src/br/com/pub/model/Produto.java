@@ -1,4 +1,4 @@
-package br.com.model;
+package br.com.pub.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
