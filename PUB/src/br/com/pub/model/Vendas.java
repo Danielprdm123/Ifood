@@ -1,6 +1,7 @@
 package br.com.pub.model;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -16,7 +17,10 @@ public class Vendas {
   private double totalVenda;
   private Mesa mesa;
   private Cliente cliente;
+  private  LocalTime hora;
   private List<ItemVenda>itemvenda;
+  
+
 public long getId() {
 	return id;
 }
@@ -53,4 +57,10 @@ public List<ItemVenda> getItemvenda() {
 public void setItemvenda(List<ItemVenda> itemvenda) {
 	this.itemvenda = itemvenda;
 } 
+public LocalTime getHora() {
+	return hora;
+}
+public void setHora(LocalTime hora) {
+	this.hora = hora;
+}
 }
