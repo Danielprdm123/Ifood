@@ -1,8 +1,11 @@
 package br.com.pub.model;
 
+
 import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
 
 @Entity
+@PrimaryKeyJoinColumn(name="id")
 public class Pessoa_Fisica extends Cliente{
 	private int cpf;
 	private int rg;

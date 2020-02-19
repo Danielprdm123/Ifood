@@ -5,28 +5,40 @@ import java.time.LocalTime;
 import java.util.List;
 
 import javax.jws.Oneway;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 // venda e cliente -> onetomany 1-1
-// venda e mesa -> maintwoone n-1
+// venda e mesa -> ManyToMany n-1
 
 @Entity
 public class Vendas {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private long id;
+  
+ 
   private LocalDate data;
+  
   private double totalVenda;
+  
+  @OneToOne
   private Mesa mesa;
   
-  @OneToMany
+  @OneToOne
   private Cliente cliente;
   
   private  LocalTime hora;
+  
+  @ManyToMany
   private List<ItemVenda>itemvenda;
   
 
