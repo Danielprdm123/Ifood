@@ -16,8 +16,7 @@ import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-// venda e cliente -> onetomany 1-1
-// venda e mesa -> ManyToMany n-1
+
 
 @Entity
 public class Vendas {
