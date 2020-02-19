@@ -4,8 +4,6 @@ import java.time.LocalDate;
 
 import javax.persistence.Entity;
 import javax.persistence.PrimaryKeyJoinColumn;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 @Entity
 @PrimaryKeyJoinColumn(name="id")
