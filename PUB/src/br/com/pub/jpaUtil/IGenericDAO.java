@@ -7,6 +7,6 @@ public interface IGenericDAO <E>{
 	public void alterar(E entidade);
 	public void deletar(E entidade);
 	public List<E> litarTodos(Class<E> entidade);
-	List<E> litarTodos();
+	
 
 }

@@ -51,4 +51,5 @@ public class GenericDAO<E> implements IGenericDAO<E>, Serializable{
 		em.close();
 		return retorno;
 	}
+	
 }
