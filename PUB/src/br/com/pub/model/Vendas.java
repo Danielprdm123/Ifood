@@ -11,6 +11,9 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
 
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
+
 
 
 
@@ -26,14 +29,17 @@ public class Vendas {
   private double totalVenda;
   
   @OneToOne
+  @Cascade({CascadeType.PERSIST,CascadeType.REMOVE})
   private Mesa mesa;
   
   @OneToOne
+  @Cascade({CascadeType.PERSIST,CascadeType.REMOVE,CascadeType.MERGE})
   private Cliente cliente;
   
   private  LocalTime hora;
   
   @ManyToMany
+  @Cascade({CascadeType.PERSIST,CascadeType.REMOVE,CascadeType.MERGE})
   private List<ItemVenda>itemvenda;
   
 

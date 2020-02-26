@@ -6,6 +6,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
+
 @Entity
 public class ItemVenda {
 	@Id
@@ -14,7 +17,10 @@ public class ItemVenda {
 	private int qtd;
 	
 	@ManyToOne
+	@Cascade({CascadeType.ALL})
 	private Produto produto;
+	
+	
 	
 	public long getId() {
 		return id;
