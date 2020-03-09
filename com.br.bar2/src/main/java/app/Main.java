@@ -11,7 +11,7 @@ import br.com.pub.DAO.ItemVendaDAO;
 import br.com.pub.DAO.UsuarioDAO;
 import br.com.pub.DAO.VendasDAO;
 
-// Dinamic Java EE  -> SDK java EE
+
 
 
 public class Main {
