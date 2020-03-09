@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+	
+		<h:head>
+		
+  		</h:head>
+  		<h:body>
+  		<h2>Pessoa Fisica</h2>
+  			<label>
+  				Nome:
+  				<h:form >
+   					<h:inputText value="#{PessoaFBean.pessoaf.nome}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				Endereço:
+  				<h:form >
+   					<h:inputText value="#{PessoaFBean.pessoaf.endereco}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				Telefone:
+  				<h:form >
+   					<h:inputText value="#{PessoaFBean.pessoaf.fone}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				Data Nascimento:
+  				<h:form >
+   					<h:inputText value="#{PessoaFBean.pessoaf.datanasc}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				Data Cadastro:
+  				<h:form >
+   					<h:inputText value="#{PessoaFBean.pessoaf.dt_cadastro}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				CPF:
+  				<h:form >
+   					<h:inputText value="#{PessoaFBean.pessoaf.cpf}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				RG:
+  				<h:form >
+   					<h:inputText value="#{PessoaFBean.pessoaf.rg}" />	
+   				</h:form>
+  			</label>
+  			<h:commandButton action="#{PessoaFBean.addPessoaFisica()}"
+				value="Salvar" />
+  				
+   		
+   		 </h:body>
+
+</html>

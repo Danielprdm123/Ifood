@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+	
+		<h:head>
+		
+  		</h:head>
+  		<h:body>
+  		<h2>Pessoa Juridica</h2>
+  			<label>
+  				Nome:
+  				<h:form >
+   					<h:inputText value="#{PessoaJBean.pessoaJ.nome}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				Endereço:
+  				<h:form >
+   					<h:inputText value="#{PessoaJBean.pessoaJ.endereco}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				Telefone:
+  				<h:form >
+   					<h:inputText value="#{PessoaJBean.pessoaJ.fone}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				Data Nascimento:
+  				<h:form >
+   					<h:inputText value="#{PessoaJBean.pessoaJ.datanasc}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				Data Cadastro:
+  				<h:form >
+   					<h:inputText value="#{PessoaJBean.pessoaJ.dt_cadastro}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				CNPJ:
+  				<h:form >
+   					<h:inputText value="#{PessoaJBean.pessoaJ.cnpj}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				IE:
+  				<h:form >
+   					<h:inputText value="#{PessoaJBean.pessoaJ.ie}" />	
+   				</h:form>
+  			</label>
+  			<h:commandButton action="#{PessoaJBean.addPessoaJudica()}"
+				value="Salvar" />
+  				
+   		
+   		 </h:body>
+
+</html>

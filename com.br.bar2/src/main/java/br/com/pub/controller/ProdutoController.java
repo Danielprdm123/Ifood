@@ -6,6 +6,7 @@ import java.io.Serializable;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
+import br.com.pub.jpaUtil.GenericDAO;
 import br.com.pub.model.Produto;
 
 @ManagedBean(name = "produtoBean")
@@ -22,6 +23,13 @@ public class ProdutoController implements Serializable{
 
 	public void setProd(Produto prod) {
 		this.prod = prod;
+	}
+	
+	public void addProduto(){
+	
+		GenericDAO<Produto> produtoDAO = new GenericDAO<Produto>();
+		produtoDAO.novo(prod);
+		
 	}
 
 }

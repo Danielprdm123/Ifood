@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+	
+		<h:head>
+		
+  		</h:head>
+  		<h:body>
+  		<h2>Usuario</h2>
+  			<label>
+  				Nome:
+  				<h:form >
+   					<h:inputText value="#{UsuarioBean.usuario.nome}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				Endereço:
+  				<h:form >
+   					<h:inputText value="#{UsuarioBean.usuario.endereco}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				Telefone:
+  				<h:form >
+   					<h:inputText value="#{UsuarioBean.usuario.fone}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				Data Nascimento:
+  				<h:form >
+   					<h:inputText value="#{UsuarioBean.usuario.datanasc}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				Login:
+  				<h:form >
+   					<h:inputText value="#{UsuarioBean.usuario.login}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				Senha:
+  				<h:form >
+   					<h:inputText value="#{UsuarioBean.usuario.senha}" />	
+   				</h:form>
+  			</label>
+  			
+  			<h:commandButton action="#{UsuarioBean.addUsuario()}"
+				value="Salvar" />
+  				
+   		
+   		 </h:body>
+
+</html>

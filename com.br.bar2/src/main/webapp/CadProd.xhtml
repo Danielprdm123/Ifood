@@ -9,12 +9,34 @@
 		
   		</h:head>
   		<h:body>
+  		<h2>Produto</h2>
   			<label>
   				Descricao:
-  			</label>
   				<h:form >
    					<h:inputText value="#{produtoBean.prod.descricao}" />	
    				</h:form>
+  			</label>
+  			<label>
+  				Estoque:
+  				<h:form >
+   					<h:inputText value="#{produtoBean.prod.estoque}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				Estoque Minimo:
+  				<h:form >
+   					<h:inputText value="#{produtoBean.prod.estoqueMin}" />	
+   				</h:form>
+  			</label>
+  			<label>
+  				Valor:
+  				<h:form >
+   					<h:inputText value="#{produtoBean.prod.valor}" />	
+   				</h:form>
+  			</label>
+  			<h:commandButton action="#{ProdutoBean.addProduto()}"
+				value="Salvar" />
+  				
    		
    		 </h:body>
 
