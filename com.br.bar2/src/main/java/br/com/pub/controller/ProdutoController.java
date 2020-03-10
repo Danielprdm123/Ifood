@@ -45,7 +45,7 @@ public class ProdutoController implements Serializable{
 		}
 	}
 	public List<Produto> listarProduto(){
-		return produtoDAO.litarTodos(Produto.id);
+		return produtoDAO.litarTodos(Produto.class);
 	}
 	public String delProduto() {
 		if(prod != null) {
