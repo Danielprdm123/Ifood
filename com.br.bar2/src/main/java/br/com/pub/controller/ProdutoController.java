@@ -37,12 +37,10 @@ public class ProdutoController implements Serializable{
 
 		produtoDAO.novo(prod);
 		FacesContext.getCurrentInstance().addMessage("msg: ok", new FacesMessage("Salvo com sucesso"));
-		FacesContext.getCurrentInstance().getExternalContext().getFlash().setKeepMessages(true);
 		return "sucesso !";
 		}
 		else {
 			FacesContext.getCurrentInstance().addMessage("msg: ok",new FacesMessage(""));
-			FacesContext.getCurrentInstance().getExternalContext().getFlash().setKeepMessages(true);
 			return "erro";
 		}
 	}
@@ -54,8 +52,7 @@ public class ProdutoController implements Serializable{
 
 			produtoDAO.deletar(prod);
 			FacesContext.getCurrentInstance().addMessage("msg: ok", new FacesMessage("Produto Deletado"));
-			FacesContext.getCurrentInstance().getExternalContext().getFlash().setKeepMessages(true);
-			return "sucesso !";
+			return "Deletado !";
 			}
 		return"";
 	}
